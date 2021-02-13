@@ -14,16 +14,17 @@ return [
     | To learn more: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
     |
     */
+     'paths' => ['*', 'graphql', 'sanctum/csrf-cookie'],
 
-    'paths' => ['https://apimanu.herokuapp.com/'],
-
-    'allowed_methods' => ['*'],
+    'allowed_methods' => [
+        'GET','POST'
+    ],
 
     'allowed_origins' => ['*'],
 
     'allowed_origins_patterns' => [],
 
-    'allowed_headers' => ['*'],
+    'allowed_headers' => ['Origin', 'Content-Type', 'X-Auth-Token', 'Authorization', 'X-Requested-With', 'x-xsrf-token'],
 
     'exposed_headers' => [],
 

@@ -26,7 +26,7 @@ return [
 
     'allowed_headers' => ['Origin', 'Content-Type', 'X-Auth-Token', 'Authorization', 'X-Requested-With', 'x-xsrf-token'],
 
-    'exposed_headers' => [],
+    'exposed_headers' => ['*'],
 
     'max_age' => 0,
 
